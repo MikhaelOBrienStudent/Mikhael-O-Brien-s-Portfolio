@@ -1,0 +1,125 @@
+html {
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(65, 63, 67);
+}
+
+.shortcut {
+    font-size: 2rem;
+    vertical-align: middle;
+    font-weight: 1000;
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.settingsGear {
+    min-height: 32px;
+    min-width: 32px;
+    max-height: 48px;
+    max-width: 48px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.Settings {
+    position: absolute;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    font-size: 0rem;
+    top: 0px;
+    left: 0px;
+    padding: 0%;
+    width: 0%;
+    height: 100vh;
+}
+
+.SettingsButton {
+    z-index: 2;
+    opacity: 0.1;
+    position: fixed;
+    height: 48px;
+    width: 48px;
+}
+
+.SettingsButton:checked ~ .Settings {
+    font-size: 1rem;
+    width: 100vh;
+    border: 2px dotted rgb(255, 132, 0);
+    background-color: rgba(176, 167, 158,0.75);
+}
+
+body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div:not(.Element, .Artwork, .Collection, .settingsGear, .Settings) {
+    border: 2px dotted rgb(255, 132, 0);
+    min-height: fit-content;
+    padding: 2%;
+    margin: 5px;
+    background-color: rgba(176, 167, 158,0.75);
+}
+
+h1, h2, h3, h4, p {
+    margin: 10px 1%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a, a:visited, a:active  {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(255, 132, 0);
+}
+
+.Element, .Artwork {
+    margin: 0 0;
+    padding: 0;
+    display:inline-block;
+}
+
+.Menu {
+    
+}
+
+.Collection {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Heading {
+    width: auto;
+    float: none;
+    overflow: hidden;
+}
+
+.Portrait {
+    width: 128px;
+    float: right;
+}
+
+.Artwork {
+
+    min-height: 100px;
+    min-width: 30%;
+    margin: 0.8%;
+    background: rgba(255,255,255,0.5);
+    display:inline-block;
+}
+
+
+.navItem {
+    font-size: 1.2rem;
+    display: inline;
+}
